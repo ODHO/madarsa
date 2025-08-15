@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import shape from '../../images/shapes/footerShape2.png'
-import logo from '../../images/logos/logo_2.svg'
+import logo from '../../images/logos/logo.png'
 
 const ClickHandler = () => {
     window.scrollTo(10, 0);
