@@ -1,4 +1,4 @@
-import { Pagination } from 'swiper';
+import { Pagination } from "swiper/modules";
 import tImg1 from '../../images/auth/reviewAuth6.png'
 import tImg2 from '../../images/auth/reviewAuth7.png'
 import { Swiper, SwiperSlide } from 'swiper/react';

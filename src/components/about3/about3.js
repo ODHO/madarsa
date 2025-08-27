@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import about1 from '../../images/man/about-man-h3.jpg'
+import about1 from '../../images/man/9.png'
 import { Slide } from "react-awesome-reveal";
 import icon1 from '../../images/icons/icon1.svg'
 import icon2 from '../../images/icons/icon2.svg'
@@ -52,17 +52,11 @@ const About3 = (props) => {
                                     <i className="fa-solid fa-heart btn__icon"></i>
                                     about foundation
                                 </span>
-                                <h2 className="sectionTitle__big">what have we done with
-                                    your help</h2>
+                                <h2 className="sectionTitle__big">About Us
+</h2>
                             </div>
                             <p className="aboutContent__text">
-                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                                alteration in some form,
-                                by injected humour, or randomised words which don't look even slightly believable. If you are going to
-                                use a passage Lorem of
-                                Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle There are many
-                                variations of
-                                passages
+                               Founded in 2010, the MIRC is a distinguished educational, research, dawah, and welfare institution under the guidance of scholars studied from the Islamic University of Madinah, KSA. With a steadfast 14-year commitment to Islam and humanity, MIRC is dedicated to inviting believers to the Oneness of Allah Almighty, defending the traditions of Prophet Muhammad ﷺ, and serving Islam and humanity in accordance with the methodology of the righteous predecessors.
                             </p>
                             <span className="aboutContent__quote">join our Action and everyone can help</span>
                             <div className="aboutContent__buttons">
@@ -115,14 +109,14 @@ const About3 = (props) => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-5">
+                    {/* <div className="col-lg-5">
                         <div className="aboutThumb aboutThumb--style3">
                             <div className="aboutThumb__text">
                                 <span className="aboutThumb__text__title">..Since..</span>
                                 <span className="aboutThumb__text__year">1998</span>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

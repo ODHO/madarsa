@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import man from '../../images/man/joinMan.jpg'
+import man from '../../images/man/6.png'
 
 const JoinSection = (props) => {
 

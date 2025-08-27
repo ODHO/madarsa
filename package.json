@@ -37,7 +37,7 @@
     "simple-parallax-js": "^5.6.2",
     "simple-react-validator": "^1.6.2",
     "slick-carousel": "^1.8.1",
-    "swiper": "^9.3.0",
+    "swiper": "^11.1.1",
     "web-vitals": "^2.1.4",
     "yet-another-react-lightbox": "^3.12.3"
   },

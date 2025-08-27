@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react';
-import { Navigation } from 'swiper';
+import { Navigation } from "swiper/modules";
 import tImg1 from '../../images/auth/reviewAuth1.png'
 import tImg2 from '../../images/auth/reviewAuth2.png'
 import tImg3 from '../../images/auth/reviewAuth3.png'

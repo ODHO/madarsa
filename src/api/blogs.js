@@ -1,7 +1,7 @@
 // images
 import blogImg1 from "../images/blog/blog1.jpg";
-import blogImg2 from "../images/blog/blog2.jpg";
-import blogImg3 from "../images/blog/blog3.jpg";
+import blogImg2 from "../images/blog/5.png";
+import blogImg3 from "../images/blog/8.png";
 import blogImg4 from "../images/update/blog4.jpg";
 import blogImg5 from "../images/update/blog5.jpg";
 import blogImg6 from "../images/update/blog6.jpg";

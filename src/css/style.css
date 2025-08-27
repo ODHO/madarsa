@@ -2849,12 +2849,17 @@ html {
 .hero--style3 .hero__figure {
   -webkit-mask-image: none;
   mask-image: none;
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   right: 0;
   margin: 0;
 }
-
+.hero--style3 .hero__figure img.hero__figure__thumbs {
+    border-radius: 50px;
+}
+.hero--style3 .hero__map img {
+    filter: drop-shadow(19px 15px 18px #B28721);
+}
 @media (max-width: 1666px) {
   .hero--style3 .hero__figure {
     max-width: 600px;

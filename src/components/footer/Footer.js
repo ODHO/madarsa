@@ -61,7 +61,7 @@ const Footer = (props) => {
                 <div className="row">
                     <div className="footer__middle pt-65 pb-35">
                         <div className="row justify-content-between">
-                            <div className="col-lg-2 col-md-4 mb-30">
+                            {/* <div className="col-lg-2 col-md-4 mb-30">
                                 <div className="footer__widget">
                                     <div className="footer__title">
                                         <h2 className="footer__heading text-uppercase text-white">About us</h2>
@@ -76,23 +76,7 @@ const Footer = (props) => {
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-lg-2 col-md-4 mb-30">
-                                <div className="footer__widget">
-                                    <div className="footer__title">
-                                        <h2 className="footer__heading text-uppercase text-white">Support us</h2>
-                                    </div>
-                                    <div className="footer__menu">
-                                        <ul>
-                                            <li><Link onClick={ClickHandler} to="/donation-listing">Donate Now</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/products">Store</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/contact">Reports</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/contact">Press Releases</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/contact">Privacy & Policy</Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> */}
                             <div className="col-lg-2 col-md-4 mb-30">
                                 <div className="footer__widget">
                                     <div className="footer__title">
@@ -104,11 +88,28 @@ const Footer = (props) => {
                                             <li><Link onClick={ClickHandler} to="/about">About us</Link></li>
                                             <li><Link onClick={ClickHandler} to="/contact">Contact us</Link></li>
                                             <li><Link onClick={ClickHandler} to="/donation-listing">Donation</Link></li>
-                                            <li><Link onClick={ClickHandler} to="/stories">Join Volentter</Link></li>
+                                            {/* <li><Link onClick={ClickHandler} to="/stories">Join Volentter</Link></li> */}
                                         </ul>
                                     </div>
                                 </div>
                             </div>
+                            <div className="col-lg-2 col-md-4 mb-30">
+                                <div className="footer__widget">
+                                    <div className="footer__title">
+                                        <h2 className="footer__heading text-uppercase text-white">Support us</h2>
+                                    </div>
+                                    <div className="footer__menu">
+                                        <ul>
+                                            <li><Link onClick={ClickHandler} to="/donation-listing">Donate Now</Link></li>
+                                            {/* <li><Link onClick={ClickHandler} to="/products">Store</Link></li> */}
+                                            <li><Link onClick={ClickHandler} to="/contact">Reports</Link></li>
+                                            {/* <li><Link onClick={ClickHandler} to="/contact">Press Releases</Link></li> */}
+                                            <li><Link onClick={ClickHandler} to="/contact">Privacy & Policy</Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <div className="col-lg-5 mb-30">
                                 <form action="#" method="post" className="footer__newsletter" onSubmit={SubmitHandler}> 
                                     <div className="footer__title">
@@ -137,7 +138,7 @@ const Footer = (props) => {
                             </div>
                             <div className="col mb-20">
                                 <div className="footer__copyright pt-20">
-                                    <p className="footer__copyright__text mb-0">Copyright@example 2024 all right receved</p>
+                                    <p className="footer__copyright__text mb-0">Copyright@odhossolutions 2025 all right receved</p>
                                 </div>
                             </div>
                         </div>

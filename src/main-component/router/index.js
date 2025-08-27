@@ -28,10 +28,10 @@ const AllRoute = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Homepage />} />
+          <Route path="/" element={<HomePage3 />} />
           <Route path="home" element={<Homepage />} />
           <Route path="home-2" element={<HomePage2 />} />
-          <Route path="home-3" element={<HomePage3 />} />
+          <Route path="home-3" element={<Homepage />} />
           <Route path="home-4" element={<HomePage4 />} />
           <Route path="about" element={<AboutUsPage />} />
           <Route path="donation-listing" element={<DonationListing />} />
