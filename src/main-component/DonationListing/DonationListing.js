@@ -43,7 +43,7 @@ const DonationListing = (props) => {
                                         <i className="fa-solid fa-heart btn__icon"></i>
                                         Donation Listing
                                     </span>
-                                    <h2 className="sectionTitle__big">Introduse Our Campains</h2>
+                                    <h2 className="sectionTitle__big">Our Projects</h2>
                                 </div>
                             </div>
                         </div>

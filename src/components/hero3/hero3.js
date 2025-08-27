@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectFade } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/effect-fade";
 
-import hero from "../../images/man/4.png";
+import hero1 from "../../images/man/4.png";
+import hero2 from "../../images/man/4.png";
+import hero3 from "../../images/man/4.png";
 import map from "../../images/man/home3-hero-map.jpg";
 import vlntr2 from "../../images/users/volunteer-user1.jpg";
 import vlntr3 from "../../images/users/volunteer-user2.jpg";
@@ -19,22 +20,25 @@ const Hero3 = () => {
     window.scrollTo(10, 0);
   };
 
-  // Example hero data slides
+  // Slides (left + right combined)
   const heroSlides = [
     {
       smallTitle: "Lorem Ipsum",
-      bigTitle: "Lorem Ipsum",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      bigTitle: "Slide One",
+      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
+      image: hero1,
     },
     {
-      smallTitle: "Lorem Ipsum",
-      bigTitle: "Lorem Ipsum",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      smallTitle: "Dolor Sit",
+      bigTitle: "Slide Two",
+      text: "It has survived not only five centuries, but also the leap into electronic typesetting...",
+      image: hero2,
     },
     {
-      smallTitle: "Lorem Ipsum",
-      bigTitle: "Lorem Ipsum",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+      smallTitle: "Amet Consectetur",
+      bigTitle: "Slide Three",
+      text: "Remaining essentially unchanged, Lorem Ipsum is still the industry's standard dummy text...",
+      image: hero3,
     },
   ];
 
@@ -45,19 +49,17 @@ const Hero3 = () => {
       </div>
 
       <div className="container container--custom">
-        <div className="row align-items-center justify-content-between">
-          {/* LEFT SIDE CONTENT WITH SLIDER */}
-          <div className="col-xl-5 col-lg-8 mb-30">
-            <Swiper
-              modules={[Autoplay]}
-        autoplay={{ delay: 4000, disableOnInteraction: false }}
-        // pagination={{ clickable: true }}
-        // navigation={true}
-        loop={true}
-        className="heroSwiper"
-            >
-              {heroSlides.map((slide, index) => (
-                <SwiperSlide key={index}>
+        <Swiper
+          modules={[Autoplay]}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          loop={true}
+          className="heroSwiper"
+        >
+          {heroSlides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <div className="row align-items-center justify-content-between">
+                {/* LEFT SIDE CONTENT */}
+                <div className="col-xl-5 col-lg-8 mb-30">
                   <div className="hero__content animate__animated animate__fadeInUp">
                     <span className="hero__title hero__title--small">
                       {slide.smallTitle}
@@ -100,22 +102,22 @@ const Hero3 = () => {
                       <span>#</span> More than 2000+ People already donate us
                     </span>
                   </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-          </div>
+                </div>
 
-          {/* RIGHT SIDE STATIC IMAGE */}
-          <div className="col-xl-6 mb-30">
-            <figure className="hero__figure">
-              <img
-                src={hero}
-                alt="Gainioz Hero"
-                className="hero__figure__thumbs"
-              />
-            </figure>
-          </div>
-        </div>
+                {/* RIGHT SIDE IMAGE */}
+                <div className="col-xl-6 mb-30">
+                  <figure className="hero__figure">
+                    <img
+                      src={slide.image}
+                      alt={slide.bigTitle}
+                      className="hero__figure__thumbs"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

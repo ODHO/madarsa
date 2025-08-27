@@ -19,7 +19,7 @@ const HomePage3 = () => {
                 <Header hclass={'header--styleThree '}/>
                 <main className="page_content">
                     <Hero3 />
-                    <CtaSection2 />
+                    {/* <CtaSection2 /> */}
                     <ServiceSection />
                     <JoinSection />
                     <About3 />
