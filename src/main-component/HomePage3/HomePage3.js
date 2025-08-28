@@ -21,8 +21,8 @@ const HomePage3 = () => {
                     <Hero3 />
                     {/* <CtaSection2 /> */}
                     <ServiceSection />
-                    <JoinSection />
                     <About3 />
+                    <JoinSection />
                     <Testimonial3 />
                     <BlogSection3 />
                 </main>

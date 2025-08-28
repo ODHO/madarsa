@@ -2,13 +2,13 @@ import sImg1 from '../images/utilites/dontaion-details-thumb1.jpg'
 import sImg2 from '../images/utilites/dontaion-details-thumb1.jpg'
 import sImg3 from '../images/utilites/dontaion-details-thumb1.jpg'
 
-import icon1 from '../images/icons/feature-icon-1.svg'
-import icon2 from '../images/icons/feature-icon-2.svg'
-import icon3 from '../images/icons/feature-icon-3.svg'
-import icon4 from '../images/icons/feature-icon-4.svg'
-import icon5 from '../images/icons/feature-icon-5.svg'
-import icon6 from '../images/icons/feature-icon-6.svg'
-import icon7 from '../images/icons/services-icon4.svg'
+import icon1 from '../images/man/winter.png'
+import icon2 from '../images/man/winter.png'
+import icon3 from '../images/man/winter.png'
+import icon4 from '../images/man/winter.png'
+import icon5 from '../images/man/winter.png'
+import icon6 from '../images/man/winter.png'
+import icon7 from '../images/man/winter.png'
 
 
 

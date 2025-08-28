@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
-import hero1 from "../../images/man/4.png";
-import hero2 from "../../images/man/4.png";
-import hero3 from "../../images/man/4.png";
+import hero from "../../images/man/home3-hero-boy1.jpg";
 import map from "../../images/man/home3-hero-map.jpg";
 import vlntr2 from "../../images/users/volunteer-user1.jpg";
 import vlntr3 from "../../images/users/volunteer-user2.jpg";
@@ -20,25 +20,25 @@ const Hero3 = () => {
     window.scrollTo(10, 0);
   };
 
-  // Slides (left + right combined)
+  // Example hero data slides
   const heroSlides = [
     {
-      smallTitle: "Lorem Ipsum",
-      bigTitle: "Slide One",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry...",
-      image: hero1,
+      smallTitle: "Hope for",
+      bigTitle: "Humanity",
+      text: "We help nonprofits from Afghanistan to Zimbabwe (and hundreds of places in between) access the tools, training.",
+      img: hero,
     },
     {
-      smallTitle: "Dolor Sit",
-      bigTitle: "Slide Two",
-      text: "It has survived not only five centuries, but also the leap into electronic typesetting...",
-      image: hero2,
+      smallTitle: "Stand with",
+      bigTitle: "Kindness",
+      text: "Your donation makes a real impact. Together, we empower communities worldwide to grow stronger.",
+      img: vlntr3,
     },
     {
-      smallTitle: "Amet Consectetur",
-      bigTitle: "Slide Three",
-      text: "Remaining essentially unchanged, Lorem Ipsum is still the industry's standard dummy text...",
-      image: hero3,
+      smallTitle: "Join the",
+      bigTitle: "Movement",
+      text: "Be part of something bigger. Every step, every donation, changes lives for the better.",
+      img: vlntr5,
     },
   ];
 
@@ -48,19 +48,20 @@ const Hero3 = () => {
         <img src={map} alt="Gainioz Map" />
       </div>
 
-      <div className="container container--custom">
-        <Swiper
-          modules={[Autoplay]}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
-          loop={true}
-          className="heroSwiper"
-        >
-          {heroSlides.map((slide, index) => (
-            <SwiperSlide key={index}>
+      <Swiper
+        modules={[Autoplay, Pagination, Navigation]}
+        autoplay={{ delay: 6000, disableOnInteraction: false }}
+        // pagination={{ clickable: true }}
+        navigation={true}
+        loop={true}
+        className="heroSwiper"
+      >
+        {heroSlides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <div className="container container--custom">
               <div className="row align-items-center justify-content-between">
-                {/* LEFT SIDE CONTENT */}
                 <div className="col-xl-5 col-lg-8 mb-30">
-                  <div className="hero__content animate__animated animate__fadeInUp">
+                  <div className="hero__content">
                     <span className="hero__title hero__title--small">
                       {slide.smallTitle}
                     </span>
@@ -85,7 +86,7 @@ const Hero3 = () => {
                       </span>
                     </Link>
 
-                    <div className="volunteerUser__profile hero__profile">
+                    {/* <div className="volunteerUser__profile hero__profile">
                       <ul>
                         {[vlntr2, vlntr3, vlntr4, vlntr5, vlntr6, vlntr7].map(
                           (img, i) => (
@@ -100,25 +101,24 @@ const Hero3 = () => {
                     </div>
                     <span className="hero__instaTitle">
                       <span>#</span> More than 2000+ People already donate us
-                    </span>
+                    </span> */}
                   </div>
                 </div>
 
-                {/* RIGHT SIDE IMAGE */}
-                <div className="col-xl-6 mb-30">
+                {/* <div className="col-xl-6 mb-30">
                   <figure className="hero__figure">
                     <img
-                      src={slide.image}
-                      alt={slide.bigTitle}
+                      src={slide.img}
+                      alt="Gainioz Hero"
                       className="hero__figure__thumbs"
                     />
                   </figure>
-                </div>
+                </div> */}
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };

@@ -50,16 +50,16 @@ const [activeFilter, setActiveFilter] = useState('all');
 
     return (
 <>
-<div className="about position-relative pb-130">
+<div className="projects-section about position-relative pb-130">
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
                                 <div className="sectionTitle text-center mb-70">
-                                    <span className="sectionTitle__small justify-content-center">
+                                    {/* <span className="sectionTitle__small justify-content-center">
                                         <i className="fa-solid fa-heart btn__icon"></i>
                                         Donation Listing
-                                    </span>
-                                    <h2 className="sectionTitle__big">Our Projects </h2>
+                                    </span> */}
+                                    <h2 className="sectionTitle__big">Our Departments </h2>
                                 </div>
                             </div>
                         </div>
@@ -169,7 +169,7 @@ const [activeFilter, setActiveFilter] = useState('all');
                                 <i className="fa-solid fa-heart btn__icon"></i>
                                 who we are
                             </span>
-                            <h2 className="sectionTitle__big">Make a Difference</h2>
+                            <h2 className="sectionTitle__big">Our Projects</h2>
                         </div>
                     </div>
                     <div className="col-lg-6 mb-55">
