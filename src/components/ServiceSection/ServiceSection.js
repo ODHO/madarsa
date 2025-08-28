@@ -94,7 +94,7 @@ const [activeFilter, setActiveFilter] = useState('all');
                                                                 </Link>
                                                             </h3>
                                                             <p className="featureBlock__text">
-                                                                We help local nonprofits access the funding, training, and support they need to become more
+                                                                {donation.description}
                                                             </p>
                                                         </div>
                                                     </div>

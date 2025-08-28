@@ -2820,7 +2820,7 @@ html {
   height: 450px;
     display: flex
 ;
-  background: url('../images/man/banner.png');
+  background: url('/public/assets/banner.png');
     background-size: 100%;
     background-repeat: no-repeat;
     justify-content: center;
@@ -2860,7 +2860,8 @@ html {
 
 @media (max-width: 991px) {
   .hero--style3 {
-    padding-top: 130px;
+        padding-top: 0px;
+        height: auto;
   }
 }
 
@@ -3048,6 +3049,38 @@ html {
 @media (max-width: 767px) {
   .aboutContent__text {
     padding-right: 0;
+  }
+  .hero--style3 .hero__title--small{
+    font-size: 18px;
+    color: white;
+        margin-top: 20px;
+  }
+  .hero--style3 .hero__title--big{
+    font-size: 22px;
+  }
+  .btn--styleOne.btn--primary{
+    display: none;
+  }
+  .hero--style3 .hero__text{
+
+    margin-bottom: 10px;
+    color: white;
+    padding: 0px 90px 0px 0px;
+    font-size: 12px;
+  }
+  .swiper-button-next::after {
+    font-size: 14px;
+}
+  .swiper-button-next{
+    width: 30px;
+    height: 30px;
+  }
+  .swiper-button-prev::after {
+    font-size: 14px;
+}
+  .swiper-button-prev{
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -3636,16 +3669,18 @@ img.map-about-tab {
 .featureBlock__thumb {
   margin-bottom: 19px;
   position: relative;
+  text-align: center;
 }
 
 .featureBlock__thumb img {
-  width: 100%;
+  width: 58px;
 }
 
 .featureBlock__hashLink {
   position: absolute;
   left: 0;
   font-size: 12px;
+  text-align: left;
   text-transform: uppercase;
   color: #fff;
   font-weight: 600;

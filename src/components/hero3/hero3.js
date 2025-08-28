@@ -49,11 +49,11 @@ const Hero3 = () => {
       </div>
 
       <Swiper
-        modules={[Autoplay, Pagination, Navigation]}
-        autoplay={{ delay: 6000, disableOnInteraction: false }}
+        modules={[Pagination, Navigation]}
+        // autoplay={{disableOnInteraction: false }}
         // pagination={{ clickable: true }}
         navigation={true}
-        loop={true}
+        // loop={true}
         className="heroSwiper"
       >
         {heroSlides.map((slide, index) => (
